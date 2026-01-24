@@ -114,6 +114,54 @@
       border-top: 1px solid rgba(255,255,255,.05);
     }
 
+    .hero-banner {
+  position: relative;
+  height: 65vh;
+  min-height: 420px;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.banner-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.6) saturate(1.1);
+}
+
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to bottom, rgba(7,11,20,0.3), rgba(7,11,20,0.9)),
+    linear-gradient(to right, rgba(7,11,20,0.8), rgba(7,11,20,0.2), rgba(7,11,20,0.8));
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 0 1.5rem;
+}
+
+.hero-content h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  letter-spacing: -0.03em;
+  margin-bottom: 0.5em;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: var(--muted);
+}
+
+
     @media (max-width: 700px) {
       .about {
         grid-template-columns: 1fr;
@@ -189,6 +237,7 @@
 
 </body>
 </html>
+
 
 
 
