@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Game Audio Resume — Raymoor | Композитор і Саунд-дизайнер</title>
+<title>Резюме — Гліб Пекуровський | Саунд-дизайнер і композитор</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -21,6 +21,7 @@
 *{box-sizing:border-box}
 body{margin:0;font-family:Inter,system-ui;background:linear-gradient(180deg,#060b16,#070f1d);color:var(--text)}
 .page{max-width:1100px;margin:auto;padding:3.5rem 2.5rem}
+  a{color:var(--accent)}
 h1{font-size:3rem;letter-spacing:-.04em;margin-bottom:.3em}
 h2{font-size:1.5rem;margin:2.5rem 0 .8rem;color:var(--accent)}
 h3{font-size:1.1rem;margin:.2rem 0}
@@ -34,6 +35,42 @@ h3{font-size:1.1rem;margin:.2rem 0}
 .entry{display:grid;grid-template-columns:120px 1fr;gap:1.6rem}
 .year{color:var(--accent);font-weight:600}
 .job{color:var(--muted)}
+ .grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    }
+ .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.01));
+      border: 1px solid rgba(255,255,255,.05);
+      border-radius: 18px;
+      padding: 1rem;
+      backdrop-filter: blur(10px);
+    }
+  .project-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: .3em;
+  color: var(--accent);
+}
+
+.project-card p {
+  color: var(--muted);
+}
+
+.project-card a {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+iframe {
+      width: 100%;
+      border: none;
+      border-radius: 14px;
+    }
 footer{margin-top:3rem;text-align:center;color:var(--muted)}
 @media(max-width:900px){.page{padding:2rem 1.5rem}.hero{grid-template-columns:1fr;text-align:center}.grid-2{grid-template-columns:1fr}.entry{grid-template-columns:1fr}}
 @media print{body{background:#fff;color:#000}.card{background:#fff;border:1px solid #ccc}h2{color:#000}}
@@ -49,99 +86,239 @@ footer{margin-top:3rem;text-align:center;color:var(--muted)}
       <h1>Гліб Пекуровський</h1>
       <div class="subtitle">Саунд-дизайнер | Композитор</div>
       <p>Створюю звук, музику та інтерактивні аудіо-системи для відеоігор.</p>
-      <p>🎧 soundcloud.com/you · 🎬 youtube.com/you · 💬 Discord: raymoor · 📧 youremail@gmail.com</p>
+      📫 i@pekurovsky.org.ua 📞+380973118133 📱<a href="https://t.me/wereinthistogether" target="_blank" rel="noopener noreferrer">Telegram</a> <br>	
     </div>
   </div>
 
   <h2>Профіль</h2>
   <div class="card">
     <p>Саунд-дизайнер та композитор у сфері розробки ігор. Моїм основним фокусом є створення живого, імерсивного та адаптивного аудіо, що підсилює наратив, атмосферу та ігровий процес.
-    Створюю емоційно насичені саундтреки, деталізовані звукові ефекти та адаптивні аудіосистеми, 
-    Пишу музику, яка органічно інтегрується в ігровий процес.
-    Працюю на стику художнього мислення та технічної реалізації: від концепції, саунд-дизайну та композиції — до імплементації в рушіях, оптимізації та фінального полірування (FMOD, Wwise).</p>
+    Працюю на стику художнього мислення та технічної реалізації: від саунд-дизайну та написання музики до їхньої імплементації в ігрових рушіях (Unity, Unreal Engine) із використанням сучасного аудіо-пайплайну (FMOD, Wwise).</p>
+  </div>
+  
+  <h2>Проєкти</h2>
+  <div class="grid">
+    
+    <div class="card project-card">
+      <h3>Netflix Games: Sex Education</h3>
+      <p><strong>Роль:</strong> SFX | Music | Wwise | Unity</p>
+      <p><a href="https://www.netflix.com/ua-en/games/81777760" target="_blank">Посилання</a></p>
+    </div>
+    
+    <div class="card project-card">
+      <h3>Undead Blocks</h3>
+      <p><strong>Роль:</strong> SFX | Music | FMOD | Unity</p>
+      <p><a href="https://www.undeadblocks.com" target="_blank">Посилання</a></p>
+    </div>
+    
+    <div class="card project-card">
+      <h3>Mechachain: War Robot Shooter</h3>
+      <p><strong>Роль:</strong> SFX | Music | FMOD | Unity</p>
+      <p><a href="https://play.google.com/store/apps/details?id=com.gameverse.mechachain&hl=uk&pli=1" target="_blank">Посилання</a></p>
+    </div>
+	
+	 <div class="card project-card">
+      <h3>YoloEx</h3>
+      <p><strong>Роль:</strong> SFX | Music | Unreal Engine</p>
+      <p><a href="https://store.epicgames.com/ru/p/yoloex-630b78" target="_blank">Посилання</a></p>
+    </div>
+	
+	<div class="card project-card">
+      <h3>Springfield Hotel</h3>
+      <p><strong>Роль:</strong> SFX | Unreal Engine</p>
+      <p><a href="https://prelaunch.springfieldhotelgame.com" target="_blank">Посилання</a></p>
+    </div>
+	
+	 <div class="card project-card">
+      <h3>Kami: Parade of Senses</h3>
+      <p><strong>Роль:</strong> SFX | Music</p>
+      <p><a href="https://store.steampowered.com/app/2764320/Kami_Parade_of_Senses" target="_blank">Посилання</a></p>
+    </div>
+	
   </div>
 
   <div class="grid-2">
 
     <div>
-      <h2>Core Skills</h2>
+      <h2>Основні навички</h2>
       <div class="card list">
-        <div>• Game music composition (fantasy, cinematic, orchestral, hybrid)</div>
-        <div>• Sound design (SFX, UI, Foley, environments, creatures, weapons)</div>
-        <div>• Adaptive & interactive music systems</div>
-        <div>• Audio implementation (FMOD, Wwise)</div>
-        <div>• Mixing & mastering for games</div>
-        <div>• Audio optimization & performance balancing</div>
+        <div>• Саунд-дизайн (SFX, UI, Foley, оточення, істоти, зброя)</div>
+        <div>• Ігрова музика (cinematic, fantasy, electronic, orchestral, rock, hybrid)</div>
+        <div>• Адаптивні та інтерактивні аудіо-системи (FMOD, Wwise)</div>
+        <div>• Зведення та мастеринг</div>
+        <div>• Технічна оптимізація та балансування аудіо</div>
       </div>
     </div>
 
     <div>
-      <h2>Tools & Technologies</h2>
+      <h2>Інструменти та технології</h2>
       <div class="card list">
-        <div>DAWs: REAPER, Ableton Live, Cubase</div>
-        <div>Game Audio: FMOD Studio, Audiokinetic Wwise</div>
-        <div>Audio: iZotope RX, Ozone, FabFilter Suite</div>
-        <div>Instruments: Kontakt, Omnisphere, Serum, Diva</div>
-        <div>Engines: Unity, Unreal Engine</div>
+        <div><b>DAW</b>: REAPER, Cubase, Studio One, Logic</div>
+        <div><b>Рушії</b>: Unity, Unreal Engine</div>
+        <div><b>Ігрове аудіо</b>: FMOD Studio, Audiokinetic Wwise</div>
+        <div><b>Плагіни</b>: iZotope RX, Ozone, FabFilter, Krotos Studio та ін.</div>
+        <div><b>Інструменти</b>: Kontakt, Omnisphere, Vital, Arturia та ін.</div>
+        <div><b>Системи контролю версій</b>: Git, Perforce</div>
+        <div><b>Проджект-менеджмент</b>: Jira, Trello, Airtable</div>  
       </div>
     </div>
 
   </div>
-
-  <h2>Languages</h2>
+  
+  <h2>Додаткові навички</h2>
   <div class="card list">
-    <div>Ukrainian — Native</div>
-    <div>English — Upper-Intermediate (B2+)</div>
+    <div><b>Музичні інструменти</b>: клавішні, гітара, вокал.</div>
   </div>
 
-  <h2>Work Experience</h2>
+  <h2>Мови</h2>
+  <div class="card list">
+    <div>Ukrainian: рідна</div>
+    <div>English: впевнена робоча (B2+)</div>
+  </div>
+
+  <h2>Робочий досвід</h2>
   <div class="card timeline">
 
     <div class="entry">
-      <div class="year">2022–Present</div>
+      <div class="year">2021 – теперішній час</div>
       <div>
-        <h3>Game Music Composer & Sound Designer</h3>
-        <div class="job">Freelance / Studio Projects</div>
-        <p>• Composed original cinematic and fantasy soundtracks for multiple game projects.<br>
-           • Designed immersive sound effects for gameplay, environments, UI, and cinematics.<br>
-           • Developed adaptive and interactive music systems for exploration, combat, and boss encounters.<br>
-           • Implemented full audio pipelines using FMOD and Wwise.<br>
-           • Collaborated closely with designers, programmers, and narrative teams to enhance player immersion.<br>
-           • Optimized audio systems for real-time performance.</p>
+        <h3>Kevuru Games</h3>
+        <div class="job">Саунд дизайнер, композитор</div>
+       <p>• Саунд-дизайн (SFX, UI, foley, ембіанс, істоти, зброя)<br>
+          • Ігрова музика для exploration, combat, boss fights, катсцен та трейлерів.<br>
+         • Побудова інтерактивних систем у FMOD та Wwise.<br>
+         • Інтеграція аудіо у Unity та Unreal Engine.<br>
+         • Тісна взаємодія з геймдизайнерами, технічною та художніми командами.<br>
+         • Оптимізація звучання під технічні специфікації.</p>
+      </div>
+    </div>
+    
+    <div class="entry">
+      <div class="year">2024 – теперішній час</div>
+      <div>
+        <h3>Kostrum Games</h3>
+        <div class="job">Саунд дизайнер, композитор</div>
+        <p>• Написання музики та саунд-дизайн ігрового процесу та сінематиків.<br>
+           • Зведення, мастеринг та пост-продакшн аудіо.<br>
+           • Технічна обробка аудіо, видалення шумів.<br>
       </div>
     </div>
 
     <div class="entry">
-      <div class="year">2019–2022</div>
+      <div class="year">2016 – 2021</div>
       <div>
-        <h3>Music Producer & Sound Designer</h3>
-        <div class="job">Freelance</div>
-        <p>• Music composition and production for games, trailers, and interactive media.<br>
-           • Sound design for cinematic and gameplay systems.<br>
-           • Mixing, mastering, and audio post-production.<br>
-           • Direct collaboration with clients and development teams.</p>
+        <h3>Upwork</h3>
+        <div class="job">Саунд дизайнер, композитор</div>
+        <p>• Написання музики та аудіо-продакшн для ігор та реклами.<br>
+           • Саунд-дизайн ігор та синематиків.<br>
+           • Зведення, мастеринг та пост-продакшн аудіо.<br>
+           • Технічна обробка аудіо, видалення шумів.<br>
+           • Створення та редагування подкастів.<br>
+           • Комунікація з клієнтами та командами розробників.</p>
+      </div>
+    </div>
+    
+    <div class="entry">
+      <div class="year">2012 – теперішній час</div>
+      <div>
+        <h3>Violet Raymoor</h3>
+        <div class="job">Композитор, саунд-продюсер, вокаліст</div>
+        <p>• Написання музики, саунд-продюсування та вокал у музичному проєкті.<br>
+           
+           </p>
+      </div>
+    </div>
+    
+    <div class="entry">
+      <div class="year">2012 – теперішній час</div>
+      <div>
+        <h3>Gerrard Flynne</h3>
+        <div class="job">Композитор</div>
+        <p>• Написання музики в жанрах cinematic, orchestral, epic, fantasy.<br>
+           
+           </p>
       </div>
     </div>
 
   </div>
 
-  <h2>Education</h2>
+  <h2>Освіта</h2>
   <div class="card timeline">
-
+    
     <div class="entry">
-      <div class="year">2016–2020</div>
+      <div class="year">2014 - 2015</div>
       <div>
-        <h3>Bachelor’s Degree — Audio Engineering / Music Production</h3>
-        <div class="job">University Name</div>
+        <h3>Кандидат технічних наук | Інформаційні технології</h3>
+        <div class="job">Державний університет телекомунікацій</div>
+      </div>
+    </div>
+    
+     <div class="entry">
+      <div class="year">2010 - 2013</div>
+      <div>
+        <h3>Аспірант | Інформаційні технології</h3>
+        <div class="job">Національний авіаційний університет</div>
       </div>
     </div>
 
+    <div class="entry">
+      <div class="year">2004 - 2009</div>
+      <div>
+        <h3>Спеціаліст | Системи захисту від несанкціонованого доступу</h3>
+        <div class="job">Національний авіаційний університет</div>
+      </div>
+    </div>
+
+  </div>
+  
+  <center><h1>Портфоліо</h1></center>
+  <h2>Music Playlist: Cinematic | Orchestral | Fantasy | Hybrid</h2>
+  <div class="card">
+  <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A313214727&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+  <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/gerrardflynne" title="Gerrard Flynne" target="_blank" style="color: #cccccc; text-decoration: none;">Gerrard Flynne</a> · <a href="https://soundcloud.com/gerrardflynne/sets/fantasy-cinematic-portfolio" title="Cinematic / Orchestral / Epic / Fantasy Portfolio" target="_blank" style="color: #cccccc; text-decoration: none;">Cinematic / Orchestral / Epic / Fantasy Portfolio</a></div>
+  </div>
+  
+  <h2>Demo-reel</h2>
+  
+    <div class="card">
+     <iframe 
+  height="350"
+  src="https://www.youtube.com/embed/CxtB7JUBs6Q?si=3RilqN0JBRcOJB_5"
+  title="YouTube video player"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+  </iframe>
+
+    
+  </div>
+  
+  <h2>Трейлери та сінематики</h2>
+  <div class="grid">
+    
+    <div class="card">
+     <iframe 
+  height="250"
+  src="https://www.youtube.com/embed/2juihX8UlRU?si=J8UIBSSgQPifu1nI"
+  title="YouTube video player"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+  </iframe>
+    </div>
+    
+    
+    <div class="card">
+      <iframe height="250" 
+        src="https://www.youtube.com/embed/VIDEO_ID" 
+        allowfullscreen>
+      </iframe>
+    </div>
   </div>
 
   <footer>
-    Portfolio: yoursite.com
+    © 2026 • Гліб Пекуровський
   </footer>
 
+  
 </div>
 
 </body>
